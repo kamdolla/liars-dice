@@ -32,13 +32,13 @@ prob_to_call    = 0.5
 
 Codebase is composed of several .py files–– which include game simulation, default agents, student agents, and helper functions.
 
-###**autograder.py**
+### autograder.py
 
 As described above, run this file to initiate game simulation–– or edit global variables to observe different game settings.
 
 Also will include grading options for student agents, determining how proficent a student-made agent performs.
 
-###**agent.py**
+### agent.py
 
 Class includes base object for all other agent objects to inherit. Methods here are neccesary for game function interactions:
 
@@ -55,7 +55,7 @@ def lose():
 
 Student created agents should not use roll() or lose() functions, but may use count().
 
-###**game.py**
+### game.py
 
 Class includes game simulation object, and game state object. Game state object keeps track of current game variables, like current bid and total inventory size in game, but also is used for privacy concerns (i.e. agents should not have direct access to game variables).
 
@@ -63,13 +63,13 @@ Game state object also contains useful functions that agents can utilize, like r
 
 Game simulation object passes game state object to agents, agents are expected to utilize game state for any bidding and calling methodology.
 
-###**classagent.py**
+### classagent.py
 
 Class includes any default agents designed for testing purposes or grading purposes.
 
 Further detail of agent model in next description.
 
-###**agent.py**
+### agent.py
 
 Class includes any student designed agents that will be tested and graded for course project purposes.
 
@@ -85,7 +85,7 @@ def call(gameState):
 
 All agents must be required to have bid() and call() functions, as game simulation interactions require these two methods.
 
-###**util.py**
+### util.py
 
 Class includes helper functions, like calculating culmalative binomial distribution (look at *ProbabilityAgent* class in **myagent.py**).
 
